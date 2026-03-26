@@ -288,3 +288,79 @@ body, p, li {
   height: 100%;
   border: none;
 }
+
+  /* Make the page a flex column so footer sticks naturally */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content above the footer grows */
+#wrapper {
+  flex: 1;
+}
+
+/* Footer styling */
+#footer {
+  background: #111; /* dark footer */
+  color: #fff;
+  padding: 30px 20px 15px;
+  flex-shrink: 0; /* prevents footer from shrinking */
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #0071e3; /* accent hover color */
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .footer-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
