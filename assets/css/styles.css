@@ -1,7 +1,6 @@
 <!-- =====================
 styles.css (MODERN PREMIUM)
 ===================== -->
-<style>
 
 * {
   box-sizing: border-box;
@@ -196,6 +195,18 @@ nav a.active {
   .footer-links a {
     margin: 10px;
   }
+
+
+/* Brand/Logo / Page headings */
+.brand, h1, h2, h3 {
+  font-family: 'Radley', serif;
+  font-weight: normal;
+  color: #111;
 }
 
-</style>
+/* Body / Paragraphs */
+body, p, li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
