@@ -1,1 +1,91 @@
+<!-- =====================
 
+.btn:hover {
+  background: #005bb5;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2,
+.section h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Preview grid */
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.preview-grid img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.preview-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.04);
+}
+
+/* Booking */
+.booking-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.booking-container iframe {
+  width: 100%;
+  height: 750px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  header {
+    padding: 12px 20px;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+}
+
+</style>
